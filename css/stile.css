@@ -1,0 +1,513 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    /** RESET para Rems - 62.5% = 10px de 16px **/
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+
+/** Body **/
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+
+/** Globales **/
+
+img {
+    max-width: 100%;
+}
+
+.contenedor {
+    width: 95%;
+    max-width: 120rem;
+    /** =1200 px**/
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 3.8rem;
+    color: rgb(34, 34, 34);
+}
+
+h2 {
+    font-size: 3.4rem;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+h4 {
+    font-size: 2.6rem;
+}
+
+
+/** Utilidades **/
+
+.seccion {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.fw-300 {
+    font-weight: 300;
+}
+
+.centrar-texto {
+    text-align: center;
+}
+
+.d-block {
+    display: block!important;
+}
+
+.contenido-centrado {
+    max-width: 800px;
+}
+
+
+/** Botones **/
+
+.boton {
+    color: #ffffff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.8rem;
+    padding: 1rem 3rem;
+    margin-top: 3rem;
+    display: inline-block;
+    text-align: center;
+    border: none;
+    display: block;
+    flex: 0 0 100%;
+}
+
+@media (min-width: 768px) {
+    .boton {
+        display: inline-block;
+        flex: 0 0 auto;
+    }
+}
+
+.boton:hover {
+    cursor: pointer;
+}
+
+.boton-amarillo {
+    background-color: #E08709;
+}
+
+.boton-verde {
+    background-color: #71B100;
+}
+
+.boton-amarillo:hover {
+    transition: .3s ease-in-out;
+    background-color: rgba(255, 149, 0, 0.767);
+}
+
+.boton-verde:hover {
+    transition: .3s ease-in-out;
+    background-color: rgb(130, 206, 0);
+}
+
+
+/* Header */
+
+.site-header {
+    background-image: url(../img/leñabackground.jpg);
+    background-position: center center;
+    background-size: cover;
+    padding: 1rem 0 3rem 0;
+}
+
+.site-header.inicio {
+    background-image: url(../img/contacto.jpg);
+    background-position: center left;
+    background-size: cover;
+    height: 75rem;
+    min-height: 40rem;
+}
+
+.contenido-header {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .contenido-header {
+        text-align: center;
+    }
+}
+
+.contenido-header h1 {
+    color: white;
+    padding-bottom: 1rem;
+    line-height: 2;
+}
+
+.barra {
+    padding-top: 1rem
+}
+
+@media (min-width: 768px) {
+    .barra {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.achicar-logo {
+    max-width: 30rem;
+}
+
+
+/**Navegación**/
+
+.navegacion a {
+    color: white;
+    text-decoration: none;
+    font-size: 2.2rem;
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .navegacion a {
+        display: inline-block;
+        margin-right: 2rem;
+        font-size: 1.8rem;
+    }
+    .navegacion a:last-of-type {
+        margin-right: 0px;
+    }
+}
+
+.navegacion a:hover {
+    color: #71B100;
+}
+
+
+/** Mobile Menu **/
+
+.mobile-menu img {
+    width: 5rem;
+}
+
+@media (min-width: 768px) {
+    .mobile-menu img {
+        display: none;
+    }
+}
+
+.navegacion:target {
+    display: block;
+}
+
+.navegacion {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .navegacion {
+        display: block;
+    }
+}
+
+
+/** Iconos Nostros **/
+
+.encabezado-nosotros {
+    font-weight: 300;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .iconos-nosotros {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.icono {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.icono:last-of-type {
+    margin: 0;
+}
+
+@media (min-width: 768px) {
+    .icono {
+        flex-basis: calc(33.3% - 1rem);
+        margin-right: 8rem;
+    }
+}
+
+.icono h3 {
+    text-transform: uppercase;
+    color: orange;
+}
+
+
+/** Anuncios **/
+
+@media (min-width: 768px) {
+    .contenedor-anuncios {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+
+.anuncio {
+    border: 1px solid #B5B5B5;
+    background-color: #F5F5F5;
+    margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+    .anuncio {
+        flex: 0 0 calc(33.3% - 1rem);
+    }
+}
+
+@media (min-width: 768px) {
+    .achicar-texto {
+        font-size: 2.6rem;
+    }
+}
+
+@media (min-width: 980px) {
+    .achicar-texto {
+        font-size: 3rem;
+    }
+}
+
+.contenido-anuncio {
+    padding: 2rem;
+}
+
+.contenido-anuncio h3,
+.contenido-anuncio p {
+    margin: 0;
+}
+
+.precio {
+    color: #71B100;
+    font-weight: 700;
+}
+
+.ver-todas {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+/** Home **/
+
+.imagen-contacto {
+    background-image: url(../img/Background1.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 70rem;
+    display: flex;
+    align-items: center;
+}
+
+.contenido-contacto {
+    flex: 0 0 95%;
+    color: #ffffff;
+}
+
+.contenido-contacto p {
+    font-size: 1.8rem;
+}
+
+.imagen-congelados {
+    background-image: url(../img/congelados2.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 70rem;
+    display: flex;
+    align-items: center;
+}
+
+.imagen-empresas {
+    background-image: url(../img/empresas2.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 70rem;
+    display: flex;
+    align-items: center;
+}
+
+
+/** Footer**/
+
+.site-footer {
+    background-color: #ffffff;
+    margin: 0;
+}
+
+.contenedor-footer p,
+.contenedor-footer a {
+    color: darkgreen;
+}
+
+.contenedor-footer {
+    padding: 3rem 0;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .contenedor-footer {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.site-footer nav {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .site-footer nav {
+        display: block
+    }
+}
+
+.copyright {
+    margin: 0;
+    color: #ffffff;
+}
+
+
+/** INTERNAS **/
+
+
+/**Nosotros**/
+
+@media (min-width: 768px) {
+    .contenido-nosotros {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 2rem;
+    }
+}
+
+.texto-nosotros blockquote {
+    font-weight: 900;
+    font-size: 2rem;
+    margin: 0;
+    padding: 1rem 0 3rem 0;
+}
+
+.texto-ushuaia blockquote {
+    font-weight: 900;
+    font-size: 2rem;
+    margin: 0;
+    padding: 1rem 0 3rem 0;
+}
+
+
+/**Ushuaia**/
+
+@media (min-width: 768px) {
+    .contenido-ushuaia {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 2rem;
+    }
+}
+
+
+/**Anuncio**/
+
+.resumen-pack {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/**Grid**/
+
+@media (min-width: 768px) {
+    .grid {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .centrar-columnas {
+        justify-content: center;
+    }
+    .columnas-4 {
+        flex: 0 0 calc(33.3% - 1rem);
+    }
+    .columnas-6 {
+        flex: 0 0 calc(50% - 1rem);
+    }
+    .columnas-8 {
+        flex: 0 0 calc(66.6% - 1rem);
+    }
+    .columnas-10 {
+        flex: 0 0 calc(83.3% - 1rem);
+    }
+    .columnas-12 {
+        flex: 0 0 100%;
+    }
+}
+
+
+/** Contacto **/
+
+.formulario-contacto {
+    background-color: #ffffffc7;
+    padding: 5rem;
+}
+
+@media (min-width: 768px) {
+    .formulario-contacto {
+        margin-top: -55rem;
+    }
+}
+
+.formulario-contacto .campo {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+
+.formulario-contacto .campo label {
+    flex: 0 0 8rem;
+}
+
+.formulario-contacto .campo input:not([type="submit"]),
+.formulario-contacto textarea {
+    flex: 1;
+    border: 1px solid #e1e1e1;
+    padding: 1rem;
+}
+
+.formulario-contacto textarea {
+    height: 20rem;
+}
+
+.formulario-contacto .enviar {
+    display: flex;
+    justify-content: flex-end;
+}
