@@ -8,6 +8,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/stile.css">
+    <script
+    src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
+    crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -67,37 +72,7 @@
     <main class="seccion contenedor">
         <h2 class="fw-300 centrar-texto">Packs aptos para Freezer y Microondas</h2>
 
-        <div class="contenedor-anuncios">
-            <div class="anuncio">
-                <img src="img/packproteina.jpg" alt="Pack Full Proteína">
-                <div class="contenido-anuncio">
-                    <h3>Pack Full Proteína</h3>
-                    <p>10 Platos protéicos, Ideal para deportistas</p>
-                    <p class="precio">$2450</p>
-                    <a href="anuncio.html" class="boton boton-amarillo d-block">Elegir Platos</a>
-                </div>
-            </div>
-
-            <div class="anuncio">
-                <img src="img/packveggie.jpg" alt="Pack Veggie">
-                <div class="contenido-anuncio">
-                    <h3 class="achicar-texto">Pack Veggie</h3>
-                    <p>10 Platos Vegetarianos, Super Sabrosos!</p>
-                    <p class="precio">$2150</p>
-                    <a href="anuncio.html" class="boton boton-amarillo d-block">Elegir Platos</a>
-                </div>
-            </div>
-
-            <div class="anuncio">
-                <img src="img/packmixto.jpg" alt="Pack Mixto">
-                <div class="contenido-anuncio">
-                    <h3>Pack Mixto</h3>
-                    <p>10 Platos Combinados, ideal para pérdida de peso</p>
-                    <p class="precio">$2350</p>
-                    <a href="anuncio.html" class="boton boton-amarillo d-block">Elegir Platos</a>
-                </div>
-            </div>
-        </div>
+        <div id="js-anuncios-wrapper" class="contenedor-anuncios"></div>
 
         <div class="ver-todas">
             <a href="anuncios.html" class="boton boton-verde">Ver Más</a>
@@ -140,6 +115,7 @@
             <p class="copyright ">Todos Los Derechos Reservados 2020 &copy; </p>
         </div>
     </footer>
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
 
 </html>
