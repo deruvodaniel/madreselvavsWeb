@@ -132,7 +132,7 @@ h4 {
 
 .site-header.inicio {
     background-image: url(../img/contacto.jpg);
-    background-position: center left;
+    background-position: center;
     background-size: cover;
     height: 75rem;
     min-height: 40rem;
@@ -206,14 +206,9 @@ h4 {
     width: 5rem;
 }
 
-@media (min-width: 768px) {
-    .mobile-menu img {
-        display: none;
-    }
-}
-
 .navegacion:target {
     display: block;
+    transition: .5s ease-in-out;
 }
 
 .navegacion {
@@ -223,6 +218,10 @@ h4 {
 @media (min-width: 768px) {
     .navegacion {
         display: block;
+    }
+    .mobile-menu,
+    .cerrar {
+        display: none!important;
     }
 }
 
